@@ -6,17 +6,25 @@
 }
 body {
     min-height: 100vh;
-    background: linear-gradient(#e98686,#ffbbbb)
+    background: linear-gradient(#e98686,#ffbbbb);
 }
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 25px 100px 40px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
+    background: linear-gradient(
+        to bottom, 
+        black 0%,
+        black 50%,
+        black 80%,
+        rgba(0,0,0,0) 100%
+    );
 }
 header .logo {
     color: #ffffff;
@@ -25,6 +33,9 @@ header .logo {
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
+    background-color: black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
 }
 header ul {
     display: flex;
@@ -45,7 +56,24 @@ header ul li a:hover, .active {
     background-color: #ffffff;
     color: black;
 }
-
-main {
+main div {
+    display: flex;
+    align-items: center;
     position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+}
+div:nth-child(1) {
+    background-image: url(forest.jpg);
+    background-size: cover;
+}
+div:nth-child(2) {
+    background-color: black;
+}
+div:nth-child(3) {
+    background-color: black;
+}
+div:nth-child(4) {
+    background-color: black;
 }
