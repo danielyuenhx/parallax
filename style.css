@@ -18,13 +18,13 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-    background: linear-gradient(
+    /* background: linear-gradient(
         to bottom, 
         black 0%,
         black 50%,
         black 80%,
         rgba(0,0,0,0) 100%
-    );
+    ); */
 }
 header .logo {
     color: #ffffff;
@@ -32,8 +32,8 @@ header .logo {
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    background-color: black;
+    letter-spacing: 3px;
+    /* background-color: black; */
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
 }
@@ -59,21 +59,34 @@ header ul li a:hover, .active {
 main div {
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 70px;
+    text-shadow: 2px 2px 5px black;
+    font-weight: 11000px;
     position: relative;
     width: 100%;
-    height: 100vh;
     padding: 100px;
 }
 div:nth-child(1) {
     background-image: url(forest.jpg);
     background-size: cover;
+    height: 100vh;
 }
 div:nth-child(2) {
     background-color: black;
+    height: 75vh;
 }
 div:nth-child(3) {
-    background-color: black;
+    background-image: url(forest.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
 }
 div:nth-child(4) {
     background-color: black;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
